@@ -11,4 +11,15 @@ public class WelcomeController {
         return "welcome";
     }
 
+    @GetMapping(path = "/welcome")
+    public String welcome1ByFeature(){
+        return "welcome";
+    }
+
+    @GetMapping(path = "/welcome")
+    public String welcome2ByFeature(){
+        return "welcome";
+    }
+
+
 }
