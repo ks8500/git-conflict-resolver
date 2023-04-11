@@ -20,6 +20,9 @@ public class CustomerRepository {
         DB.put(3,new Customer(3,"sravan3",27,"jhalli"));
         DB.put(4,new Customer(4,"sravan4",26,"jhalli"));
         DB.put(5,new Customer(5,"sravan5",25,"jhalli"));
+        DB.put(6,new Customer(6,"sravan6",6,"jhalli"));
+        DB.put(7,new Customer(7,"sravan7",7,"jhalli"));
+        DB.put(8,new Customer(8,"sravan8",8,"jhalli"));
         return DB.values().stream().collect(Collectors.toList());
     }
 
