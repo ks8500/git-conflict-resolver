@@ -8,6 +8,7 @@ public class WelcomeController {
 
 
     //some thing changed by main
+    //some thing changed by feature
     @GetMapping(path = "/welcome")
     public String welcome(){
         return "welcome";
