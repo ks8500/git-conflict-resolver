@@ -15,9 +15,7 @@ public class CustomerService {
     private CustomerRepository repository;
 
     public List<Customer> getAllCustomers(){
-        List<Customer> customers = new ArrayList<>();
-        repository.findAll();
-        return customers;
+        return repository.findAll();
     }
 
     public Customer saveCustomer(Customer dto){
