@@ -41,6 +41,6 @@ public class CustomerRepository {
 
 
     public Customer updateCustomer(Customer customer) {
-        return new Customer();
+        return new Customer(1,"rama",1,"ayodhya");  // edited by main
     }
 }
