@@ -8,21 +8,19 @@ public class WelcomeController {
 
 
     //some thing changed by main
-    //some thing changed by feature
+    //some thing edited by main
     @GetMapping(path = "/welcome")
     public String welcome(){
         return "welcome";
     }
 
     @GetMapping(path = "/welcome")
-    public String welcome1ByFeature(){
+    public String welcome1ByMain(){
         return "welcome";
     }
 
     @GetMapping(path = "/welcome")
-    public String welcome2ByFeature(){
+    public String welcome2ByMain(){
         return "welcome";
     }
-
-
 }
