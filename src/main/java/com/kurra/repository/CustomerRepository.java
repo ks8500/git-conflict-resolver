@@ -40,5 +40,7 @@ public class CustomerRepository {
     }
 
 
-
+    public Customer updateCustomer(Customer customer) {
+        return new Customer();
+    }
 }
