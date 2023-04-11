@@ -2,6 +2,7 @@ package com.kurra.service;
 
 import com.kurra.dto.Customer;
 import com.kurra.repository.CustomerRepository;
+import com.kurra.util.Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,9 +29,13 @@ public class CustomerService {
         return repository.findById(id);
     }
 
+    public Customer updateCustomer(Customer customer){
+        return repository.updateCustomer(customer);
+    }
+
     public String deleteCustomerById(int id){
         repository.deleteCustomerById(id);
-        return "customer deleted successfully";
+        return Util.toUpperCase("customer deleted successfully");
     }
 
 
