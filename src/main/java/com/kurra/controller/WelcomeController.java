@@ -11,4 +11,13 @@ public class WelcomeController {
         return "welcome";
     }
 
+    @GetMapping(path = "/welcome")
+    public String welcome1ByMain(){
+        return "welcome";
+    }
+
+    @GetMapping(path = "/welcome")
+    public String welcome2ByMain(){
+        return "welcome";
+    }
 }
