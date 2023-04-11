@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Repository
 public class CustomerRepository {
@@ -14,7 +15,12 @@ public class CustomerRepository {
     private final Map<Integer, Customer> DB = new HashMap<>();
 
     public List<Customer> findAll(){
-        return new ArrayList<>(DB.values());
+        DB.put(1,new Customer(1,"sravan1",29,"jhalli"));
+        DB.put(2,new Customer(2,"sravan2",28,"jhalli"));
+        DB.put(3,new Customer(3,"sravan3",27,"jhalli"));
+        DB.put(4,new Customer(4,"sravan4",26,"jhalli"));
+        DB.put(5,new Customer(5,"sravan5",25,"jhalli"));
+        return DB.values().stream().collect(Collectors.toList());
     }
 
     public Customer findById(int id){
