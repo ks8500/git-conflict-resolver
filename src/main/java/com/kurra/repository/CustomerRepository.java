@@ -42,6 +42,7 @@ public class CustomerRepository {
 
     public Customer updateCustomer(Customer customer) {
         System.out.println("added by feature");
+        System.out.println("added by main");
         return new Customer(1,"rama",1,"ayodhya");  // edited by main
     }
 }
