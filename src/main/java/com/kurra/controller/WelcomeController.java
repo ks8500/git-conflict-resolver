@@ -14,7 +14,7 @@ public class WelcomeController {
         return "welcome";
     }
 
-    @GetMapping(path = "/welcome1")
+    @GetMapping(path = "/welcome1")//changed by feature
     public String welcome1ByMain(){
         return "welcome";
     }
