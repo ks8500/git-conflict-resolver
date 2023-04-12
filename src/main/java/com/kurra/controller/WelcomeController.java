@@ -19,7 +19,7 @@ public class WelcomeController {
         return "welcome";
     }
 
-    @GetMapping(path = "/welcome2")
+    @GetMapping(path = "/welcome2") //changed by feature
     public String welcome2ByMain(){
         return "welcome";
     }
