@@ -20,6 +20,8 @@ public class WelcomeController {
         int b = 10; // feature
         double d = 1; //by main
         String k = new String("Main"); //main
+
+        //just added by feature/v1
         return "welcome";
     }
 
