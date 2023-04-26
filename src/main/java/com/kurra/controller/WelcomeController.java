@@ -19,7 +19,7 @@ public class WelcomeController {
         String a = new String("sravan");//by main
         int b = 10; // feature
         double d = 1; //by main
-        float f = 1; // feature
+        String k = new String("Main"); //main
         return "welcome";
     }
 
